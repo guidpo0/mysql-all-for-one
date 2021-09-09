@@ -1,39 +1,58 @@
-### Termos e acordos
+### Informações Gerais
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe
+Projeto desenvolvido durante formação em desenvolvedor Web Full Stack pela Trybe.
+
+---
 
 # Boas vindas ao repositório do projeto All For One
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
+Este projeto tem o intuito de praticar os conceitos de SQL utilizando o banco de dados `Northwind`.
 
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+Lembrando que esta aplicação corresponde aos meus esforços para melhorar minhas hard skills e soft skills, sinta-se à vontade para explorá-la! Feedbacks construtivos são sempre bem vindos!
+
+Abaixo você poderá encontrar mais informações técnicas sobre este projeto.
 
 # Sumário
 
 - [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-- [Como desenvolver](#como-desenvolver)
-  - [Instruções para restaurar o banco de dados Northwind](#instruções-para-restaurar-o-banco-de-dados-northwind)
-  - [Instruções para testar suas queries](#instruções-para-testar-suas-queries)
-- [Requisitos do projeto](#requisitos-do-projeto)
-  - [Lista de requisitos](#lista-de-requisitos)
-    - [Desafios Iniciais](#desafios-iniciais)
-    - [Desafios sobre filtragem de dados](#desafios-sobre-filtragem-de-dados)
-    - [Desafios de manipulação de tabelas](#desafios-de-manipulação-de-tabelas)
-- [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos Finais](#avisos-finais)
+- [Intruções para fazer o fork do repositório](#intruções-para-fazer-o-fork-do-repositório)
+- [Informações do projeto](#informações-do-projeto)
+  - [Code Climate](#code-climate)
+  - [Banco de dados Northwind](#banco-de-dados-northwind)
+- [Desafios](#desafios)
+  - [Desafio 1](#desafio-1)
+  - [Desafio 2](#desafio-2)
+  - [Desafio 3](#desafio-3)
+  - [Desafio 4](#desafio-4)
+  - [Desafio 5](#desafio-5)
+  - [Desafio 6](#desafio-6)
+  - [Desafio 7](#desafio-7)
+  - [Desafio 8](#desafio-8)
+  - [Desafio 9](#desafio-9)
+  - [Desafio 10](#desafio-10)
+  - [Desafio 11](#desafio-11)
+  - [Desafio 12](#desafio-12)
+  - [Desafio 13](#desafio-13)
+  - [Desafio 14](#desafio-14)
+  - [Desafio 15](#desafio-15)
+  - [Desafio 16](#desafio-16)
+  - [Desafio 17](#desafio-17)
+  - [Desafio 18](#desafio-18)
+  - [Desafio 19](#desafio-19)
+  - [Desafio 20](#desafio-20)
+  - [Desafio 21](#desafio-21)
+  - [Desafio 22](#desafio-22)
+  - [Desafio 23](#desafio-23)
+  - [Desafio 24](#desafio-24)
+  - [Desafio 25](#desafio-25)
+  - [Desafio 26](#desafio-26)
+  - [Desafio 27](#desafio-27)
 
 ---
 
 # Habilidades
-Nesse projeto, você será capaz de:
+
+Nesse projeto, fui capaz de:
 
 - Entender o que são bancos de dados
 - Entender como a linguagem de consulta estruturada (SQL) é usada
@@ -61,120 +80,25 @@ Nesse projeto, você será capaz de:
 
 ---
 
-# Entregáveis
+# Instruções para fazer o fork do repositório
 
-## O que deverá ser desenvolvido
+1. Faça o fork do repositório
 
-Hoje você fará um projeto com o codinome *All For One* em que praticará todos os conceitos de SQL já ensinados até aqui. Porém, você vai usar um banco de dados totalmente diferente, então dê tchau para o `sakila` e dê boas vindas ao `Northwind`, que será usado neste projeto. As instruções de como restaurar o banco podem ser lidas a seguir.
-
----
-
-## Desenvolvimento
-
-Temos, nesse projeto, uma série de desafios com diferentes níveis de complexidade que devem ser resolvidos cada um em seu arquivo próprio.
-
-1. Leia a pergunta e crie na raiz do projeto um arquivo chamado desafioN.sql, em que N é o número do desafio;
-
-2. O arquivo deve conter apenas o código SQL do desafio resolvido. **Não se esqueça de incluir o ponto e vírgula (";")** no final de suas queries e também de colocar o nome do **banco_de_dados.tabela_por_completo**, como no exemplo a seguir:
-
-```sql
-SELECT * FROM northwind.orders;
-```
-
-3. Faça isso até finalizar todos os desafios.
-
-4. Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter os arquivos `desafio1.sql`, `desafio2.sql` e assim por diante até o `desafio27.sql`, que conterão seu código `SQL` de cada desafio, respectivamente.
-
-5. **Não é necessário colocar** `USE northwind` ou `SET SQL_SAFE_UPDATES = 0;` no início dos seus arquivos.
-
-### ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
-
-Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a monitoria.
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
+2. Instale as dependências do projeto
+  * Instale as dependências:
+    * `npm install`
 
 ---
 
-## Data de entrega
+# Informações do projeto
 
-- Projeto individual.
+### Code Climate
 
-- Serão `X` dias de projeto.
+Para garantir a qualidade do código de forma a tê-lo mais legível, de mais fácil manutenção e seguindo as boas práticas de desenvolvimento foi utilizado neste projeto o Code Climate.
 
-- Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+### Banco de dados `Northwind`
 
-# Instruções para entregar seu projeto
-
-## Antes de começar a desenvolver
-
-1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-011-mysql-all-for-one.git`.
-  * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-011-mysql-all-for-one`
-
-2. Instale as dependências [**Caso existam**]
-  * `npm install` [**exemplo**]
-
-3. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
-  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b seunome-mysql-all-for-one`
-
-4. Para cada exercício você deve criar um novo arquivo sql seguindo a seguinte estrutura:
-  * desafio1.sql, desafio2.sql...desafioN.sql
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.sql)
-  * Adicione o novo arquivo ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando solução para desafio 1)
-        * `git status` (deve aparecer listado o arquivo _desafio1.sql_ em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
-        * `git commit -m 'iniciando o projeto MySQL All For One'` (fazendo o primeiro commit)
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-6. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin seunome-mysql-all-for-one`
-
-7. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-011-mysql-all-for-one/pulls)
-  * Clique no botão verde _"New pull request"_
-  * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-  * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-011-mysql-all-for-one/pulls) e confira que o seu _Pull Request_ está criado
-
----
-
-## Durante o desenvolvimento
-
-⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo CodeClimate estão resolvidas! ⚠
-
-## ⚠️ É importante que seus arquivos tenham exatamente estes nomes e esteja na raiz do projeto! ⚠️
-
-* Faça `commits` das alterações que você fizer no código regularmente
-
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-* Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
-
-# Como desenvolver
-
-## Instruções para restaurar o banco de dados `Northwind`
+Instruções para instaurar o banco de dados:
 
 1. Faça o download do arquivo de backup [aqui](northwind.sql) clicando em "Raw", depois clicando com botão direito e selecionando "Salvar como" para salvar o arquivo em seu computador.
 2. Abra o arquivo com algum editor de texto, e selecione todo o conteúdo do arquivo usando `CTRL-A`.
@@ -197,126 +121,114 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 ---
 
-## Instruções para testar suas queries
+# Desafios
 
-Para executar localmente os testes, é preciso escrever o seguinte comando no seu terminal:
-```sh
-MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> npm test
-```
+### Desafio 1
 
-Ou seja, suponha que para poder acessar a base de dados feita neste projeto você tenha `root` como seu nome de pessoa usuária, `password` como senha e `localhost` como host. Logo, você executaria:
-```sh
-MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost npm test
-```
+Exiba apenas os nomes dos produtos da tabela `products`.
 
-Usando o exemplo anterior de base, suponha que você não tenha setado uma senha para `root`. Neste caso, você executaria:
-```sh
-MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
-  ```
----
+### Desafio 2
 
-:warning: **Não é necessário colocar** `USE northwind` ou `SET SQL_SAFE_UPDATES = 0;` no início dos seus arquivos :warning:
+Exiba os dados de todas as colunas da tabela `products`.
 
----
+### Desafio 3
 
-# Requisitos do projeto
+Escreva uma query que exiba os valores da coluna que contém a primary key da tabela `products`.
 
-Monte queries para encontrar as informações esperadas pelos desafios:
+### Desafio 4
 
-## Lista de Requisitos
+Conte quantos registros existem na coluna `product_name` da tabela `products`.
 
-## Desafios Iniciais
+### Desafio 5
 
-#### 1 - Exiba apenas os nomes dos produtos da tabela `products`.
+Monte uma query que exiba os dados da tabela `products` a partir do quarto registro até o décimo terceiro. Tanto o quarto quanto o décimo terceiro registros, precisam aparecer na consulta. Obs.: não use `where` ou `order by`.
 
-#### 2 - Exiba os dados de todas as colunas da tabela `products`.
+### Desafio 6
 
-#### 3 - Escreva uma query que exiba os valores da coluna que contém a primary key da tabela `products`.
+Exiba os dados das colunas `product_name` e `id` da tabela `products` de maneira que os resultados estejam em ordem alfabética dos nomes.
 
-#### 4 - Conte quantos registros existem na coluna `product_name` da tabela `products`.
-#### 5 - Monte uma query que exiba os dados da tabela `products` a partir do quarto registro até o décimo terceiro. Tanto o quarto quanto o décimo terceiro registros, precisam aparecer na consulta. Obs.: não use `where` ou `order by`.
+### Desafio 7
 
-#### 6 - Exiba os dados das colunas `product_name` e `id` da tabela `products` de maneira que os resultados estejam em ordem alfabética dos nomes.
+Mostre apenas os ids dos 5 últimos registros da tabela `products` (a ordernação deve ser baseada na coluna `id`).
 
-#### 7 - Mostre apenas os ids dos 5 últimos registros da tabela `products` (a ordernação deve ser baseada na coluna `id`).
-#### 8 - Faça uma consulta que retorne três colunas. Na primeira coluna, exiba a soma de `5 + 6` (essa soma deve ser realizada pelo SQL). Na segunda coluna deve haver a palavra \"de\". E por fim, na terceira coluna, exiba a soma de `2 + 8` (essa soma deve ser realizada pelo SQL). A primeira coluna deve se chamar \"A\", a segunda coluna deve se chamar \"Trybe\" e a terceira coluna deve se chamar \"eh\". Não use colunas pre-existentes, apenas o que for criado na hora.
+### Desafio 8
 
----
+Faça uma consulta que retorne três colunas. Na primeira coluna, exiba a soma de `5 + 6` (essa soma deve ser realizada pelo SQL). Na segunda coluna deve haver a palavra \"de\". E por fim, na terceira coluna, exiba a soma de `2 + 8` (essa soma deve ser realizada pelo SQL). A primeira coluna deve se chamar \"A\", a segunda coluna deve se chamar \"Trybe\" e a terceira coluna deve se chamar \"eh\". Não use colunas pre-existentes, apenas o que for criado na hora.
 
-## Desafios sobre filtragem de dados
+### Desafio 9
 
-#### 9 - Mostre todos os valores da coluna `notes` da tabela `purchase_orders` que não são nulos.
+Mostre todos os valores da coluna `notes` da tabela `purchase_orders` que não são nulos.
 
-#### 10 - Mostre todos os dados da tabela `purchase_orders` em ordem decrescente, ordenados por `created_by` em que o `created_by` é maior ou igual a 3. Como critério de desempate para a ordenação, ordene também os resultados pelo `id` de forma crescente.
+### Desafio 10
 
-#### 11 - Exiba os dados da coluna `notes` da tabela `purchase_orders` em que seu valor de \"Purchase generated based on Order\" está entre 30 e 39, incluindo tanto o valor de 30 quanto de 39.
+Mostre todos os dados da tabela `purchase_orders` em ordem decrescente, ordenados por `created_by` em que o `created_by` é maior ou igual a 3. Como critério de desempate para a ordenação, ordene também os resultados pelo `id` de forma crescente.
 
-#### 12 - Mostre os resultados da coluna `submitted_date` da tabela  `purchase_orders` em que a `submitted_date` é do dia 26 de abril de 2006.
+### Desafio 11
 
-#### 13 - Mostre o resultado da coluna `supplier_id` da tabela `purchase_orders` em que o `supplier_id` seja 1 ou 3.
+Exiba os dados da coluna `notes` da tabela `purchase_orders` em que seu valor de \"Purchase generated based on Order\" está entre 30 e 39, incluindo tanto o valor de 30 quanto de 39.
 
-#### 14 - Mostre os resultados da coluna `supplier_id` da tabela `purchase_orders` em que o `supplier_id` esteja entre os valores 1 e 3, incluindo tanto o 1 quanto o 3.
+### Desafio 12
 
-#### 15 - Mostre somente as horas (sem os minutos e os segundos) da coluna `submitted_date` de todos registros da tabela `purchase_orders`. Chame essa coluna de `submitted_hour`.
+Mostre os resultados da coluna `submitted_date` da tabela  `purchase_orders` em que a `submitted_date` é do dia 26 de abril de 2006.
 
-#### 16 - Exiba os resultados da coluna `submitted_date` da tabela `purchase_orders` que estão entre `2006-01-26 00:00:00` e `2006-03-31 23:59:59`.
+### Desafio 13
 
-#### 17 - Mostre os registros das colunas `id` e `supplier_id` da tabela `purchase_orders` em que os `supplier_id` sejam tanto 1, ou 3, ou 5, ou 7.
+Mostre o resultado da coluna `supplier_id` da tabela `purchase_orders` em que o `supplier_id` seja 1 ou 3.
 
-#### 18 - Mostre todos os registros da tabela `purchase_orders` que tem o valor na coluna `supplier_id` igual a 3 e o valor na coluna `status_id` igual a 2.
+### Desafio 14
 
-#### 19 - Mostre a quantidade de pedidos que foram feitos na tabela `orders` pelo `employee_id` igual a 5 ou 6, e que foram enviados através do método(coluna) `shipper_id` igual a 2. Chame a coluna de `orders_count`.
+Mostre os resultados da coluna `supplier_id` da tabela `purchase_orders` em que o `supplier_id` esteja entre os valores 1 e 3, incluindo tanto o 1 quanto o 3.
 
----
+### Desafio 15
 
-## Desafios de manipulação de tabelas
+Mostre somente as horas (sem os minutos e os segundos) da coluna `submitted_date` de todos registros da tabela `purchase_orders`. Chame essa coluna de `submitted_hour`.
 
-#### 20 - Adicione à tabela `order_details` uma linha com os seguintes dados: `order_id`: 69, `product_id`: 80, `quantity`: 15.0000, `unit_price`: 15.0000, `discount`: 0, `status_id`: 2, `date_allocated`: NULL, `purchase_order_id`: NULL e `inventory_id`: 129. Obs.: o `id` deve ser incrementado automaticamente.
+### Desafio 16
 
-#### 21 - Adicione, com um único `INSERT`, duas linhas à tabela `order_details` com os mesmos dados. Esses dados são novamente `order_id`: 69, `product_id`: 80, `quantity`: 15.0000, `unit_price`: 15.0000, `discount`: 0, `status_id`: 2, `date_allocated`: NULL, `purchase_order_id`: NULL e `inventory_id`: 129. O `ìd` deve ser incrementado automaticamente.
+Exiba os resultados da coluna `submitted_date` da tabela `purchase_orders` que estão entre `2006-01-26 00:00:00` e `2006-03-31 23:59:59`.
 
-#### 22 - Atualize os dados na coluna `discount` da tabela `order_details` para 15. (Não é necessário utilizar o SAFE UPDATE em sua query).
+### Desafio 17
 
-#### 23 - Atualize os dados da coluna `discount` da tabela `order_details` para 30, onde o valor na coluna `unit_price` seja menor que 10.0000. (Não é necessário utilizar o SAFE UPDATE em sua query).
+Mostre os registros das colunas `id` e `supplier_id` da tabela `purchase_orders` em que os `supplier_id` sejam tanto 1, ou 3, ou 5, ou 7.
 
-#### 24 - Atualize os dados da coluna `discount` da tabela `order_details` para 45, onde o valor na coluna `unit_price` seja maior que 10.0000 e o id seja um número entre 30 a 40. (Não é necessário utilizar o SAFE UPDATE em sua query).
+### Desafio 18
 
-#### 25 - Delete todos os dados na coluna `unit_price` da tabela `order_details` em que o valor seja menor que 10.0000.
+Mostre todos os registros da tabela `purchase_orders` que tem o valor na coluna `supplier_id` igual a 3 e o valor na coluna `status_id` igual a 2.
 
-#### 26 - Delete todos os dados na coluna `unit_price` da tabela `order_details` em que o valor seja maior que 10.0000.
+### Desafio 19
 
-#### 27 - Delete todos os dados da tabela `order_details`.
+Mostre a quantidade de pedidos que foram feitos na tabela `orders` pelo `employee_id` igual a 5 ou 6, e que foram enviados através do método(coluna) `shipper_id` igual a 2. Chame a coluna de `orders_count`.
 
----
+### Desafio 20
 
-## Depois de terminar o desenvolvimento
+Adicione à tabela `order_details` uma linha com os seguintes dados: `order_id`: 69, `product_id`: 80, `quantity`: 15.0000, `unit_price`: 15.0000, `discount`: 0, `status_id`: 2, `date_allocated`: NULL, `purchase_order_id`: NULL e `inventory_id`: 129. Obs.: o `id` deve ser incrementado automaticamente.
 
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
+### Desafio 21
 
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
+Adicione, com um único `INSERT`, duas linhas à tabela `order_details` com os mesmos dados. Esses dados são novamente `order_id`: 69, `product_id`: 80, `quantity`: 15.0000, `unit_price`: 15.0000, `discount`: 0, `status_id`: 2, `date_allocated`: NULL, `purchase_order_id`: NULL e `inventory_id`: 129. O `ìd` deve ser incrementado automaticamente.
 
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
+### Desafio 22
 
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
+Atualize os dados na coluna `discount` da tabela `order_details` para 15. (Não é necessário utilizar o SAFE UPDATE em sua query).
 
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-011`.
+### Desafio 23
 
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
+Atualize os dados da coluna `discount` da tabela `order_details` para 30, onde o valor na coluna `unit_price` seja menor que 10.0000. (Não é necessário utilizar o SAFE UPDATE em sua query).
 
-# Revisando um pull request
+### Desafio 24
 
-Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
+Atualize os dados da coluna `discount` da tabela `order_details` para 45, onde o valor na coluna `unit_price` seja maior que 10.0000 e o id seja um número entre 30 a 40. (Não é necessário utilizar o SAFE UPDATE em sua query).
 
-\#VQV 🚀
+### Desafio 25
 
----
+Delete todos os dados na coluna `unit_price` da tabela `order_details` em que o valor seja menor que 10.0000.
 
-# Avisos finais
+### Desafio 26
 
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
+Delete todos os dados na coluna `unit_price` da tabela `order_details` em que o valor seja maior que 10.0000.
 
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH#cohort_name=Turma%2011)
+### Desafio 27
 
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
+Delete todos os dados da tabela `order_details`.
 
 ---
